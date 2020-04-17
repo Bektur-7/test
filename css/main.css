@@ -1,0 +1,24 @@
+.header {
+    background-color: white;
+    height: 600px;
+    background: url(../unnamed.jpg);
+    background-size: contain;
+}
+
+.hh {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 300px;
+
+}
+
+.hhh {
+
+
+    margin: 0 auto;
+    color: black;
+    ;
+
+}
