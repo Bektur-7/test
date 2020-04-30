@@ -1,27 +1,54 @@
-// function buttonClick (button) {
-//     alert("Вы нажали на кнопку. Кнопка имеет имя " + button.name + ", также value равно " + button.value + ".")
-
-// }
-// var counter = 0
-
-// function counter1(element) {
+$(document).ready(function () {
     
-//     counter++
 
-//     element.innerHTML = "На этот текст было наведено "  + counter + " раз"
-// }
+// 8 task
 
-
-// function hello() {
-//     console.log("Hello", this)
-// }
+let btn = $('#btn')
+$(btn.on('click', function(){
+    body.css('background-color','yellow')
+})
 
 
 
-// const person = {
-//     name: "Bektur",
-//     age: 26,
-//     sayHello: hello
-// }
+// 9 Task
 
 
+let btn = $('#btn');
+btn.click(function() {
+    let firstname = $('.firstname').val();
+    let lastname = $('.lastname').val();
+    let password = $('.password').val();
+
+    if(firstname =='',lastname =='', password === ''){
+        alert('Вы не ввели данные');
+
+    }else{
+        window.location = "http://google.com";
+    }
+
+    
+})
+
+
+
+// 10 task
+
+let move = 0
+$('.square').click(function () {
+    
+    move += 100;
+    $('.square').css('left', `${move}px`)
+})
+
+
+// 11 task
+
+$(document).on('mousemove', function(e){
+    console.log(e.offsetX, e.offsetY)
+})
+
+
+
+
+
+})
